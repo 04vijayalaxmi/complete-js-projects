@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfy Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Comfy Store</h1>
+    </header>
+    <main>
+        <section class="product-list">
+            <div class="product" onclick="addToCart('High Speed Laptop')">
+                <img src="imges/laptop.jpeg" alt="High Speed Laptop">
+                <h2>High Speed Laptop</h2>
+                <p>$125.00</p>
+            </div>
+            <div class="product" onclick="addToCart('Comfortable Headset')">
+                <img src="imges/headset.jpeg" alt="Comfortable Headset">
+                <h2>Comfortable Headsert</h2>
+                <p>$85.00</p>
+            </div>
+            <div class="product" onclick="addToCart('Warm Shoes')">
+                <img src="imges/shoes.jpeg" alt="Warm Shoes">
+                <h2>Warm Shoes</h2>
+                <p>$50.00</p>
+            </div>
+        </section>
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

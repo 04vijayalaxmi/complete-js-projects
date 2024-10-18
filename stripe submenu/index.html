@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe Submenu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <button class="menu-btn">Home</button>
+        <button class="menu-btn">About</button>
+        <button class="menu-btn">Services</button>
+        <div class="menu-item">
+            <button class="menu-btn">Products</button>
+            <div class="submenu">
+                <a href="product1.html">Product 1</a>
+                <a href="#">Product 2</a>
+                <a href="#">Product 3</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <button class="menu-btn">Solutions</button>
+            <div class="submenu">
+                <a href="sales1.html">Solution 1</a>
+                <a href="#">Solution 2</a>
+                <a href="#">Solution 3</a>
+            </div>
+        </div>
+    </nav>
+    <script>
+     document.querySelectorAll('.menu-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const submenu = button.nextElementSibling;
+        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    });
+});
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

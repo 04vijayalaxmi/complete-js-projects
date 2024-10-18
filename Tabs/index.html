@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="hero">
+        <div class="btn-box">
+            <button id="btn1" onclick="openHTML()"> <i class="fa-brands fa-html5"></i>HTML</button>
+            <button id="btn2" onclick="openCSS()"> <i class="fa-brands fa-css3-alt"></i>CSS</button>
+            <button id="btn3" onclick="openJAVASCRIPT()"> <i class="fa-brands fa-codepen"></i>JAVASCRIPT</button>
+        </div>
+        <div  id="content1" class="content">
+            <div class="content-left">
+                <h1>Learn HTML</h1>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nulla <br>
+                    earum eum voluptates repellat amet alias necessitatibus repellendus nemo,<br>
+                     vel quod ad praesentium harum similique minima ipsum quidem fuga quam.</P>
+                     <a href="#">WATCH VIDEO</a>
+           </div>
+           <div class="content-right">
+             <img src="images/html.jpeg" alt="">
+           </div>
+        </div>
+
+        <div id="content2"   class="content">
+            <div class="content-left">
+                <h1>Learn CSS</h1>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nulla <br>
+                    earum eum voluptates repellat amet alias necessitatibus repellendus nemo,<br>
+                     vel quod ad praesentium harum similique minima ipsum quidem fuga quam.</P>
+                     <a href="#">WATCH VIDEO</a>
+           </div>
+           <div class="content-right">
+             <img src="images/css3.jpeg" alt="">
+           </div>
+        </div>
+
+
+        <div id="content3"  class="content">
+            <div class="content-left">
+                <h1>Learn Javascript</h1>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis nulla <br>
+                    earum eum voluptates repellat amet alias necessitatibus repellendus nemo,<br>
+                     vel quod ad praesentium harum similique minima ipsum quidem fuga quam.</P>
+                     <a href="#">WATCH VIDEO</a>
+           </div>
+           <div class="content-right">
+             <img src="images/js.png" alt="">
+           </div>
+        </div>
+    </div>
+
+    <script>
+        var content1=document.getElementById("content1");
+        var content2=document.getElementById("content2");
+        var content3=document.getElementById("content3");
+        var btn1=document.getElementById("btn1");
+        var btn2=document.getElementById("btn2");
+        var btn3=document.getElementById("btn3");
+
+        function openHTML(){
+            content1.style.transform="translateX(0)";
+            content2.style.transform="translateX(100%)";
+            content3.style.transform="translateX(100%)";
+
+        }
+
+        function openCSS(){
+            content1.style.transform="translateX(100%)";
+            content2.style.transform="translateX(0)";
+            content3.style.transform="translateX(100%)";
+
+        }
+
+        function openJAVASCRIPT(){
+            content1.style.transform="translateX(100%)";
+            content2.style.transform="translateX(100%)";
+            content3.style.transform="translateX(0)";
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Recipe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Make a Cocktail!</h1>
+        <div id="cocktail-section">
+            <img id="cocktail-image" src="images/cock.jpg" alt="Cocktail">
+            <p id="cocktail-name">Click the button to reveal the cocktail!</p>
+        </div>
+        <button onclick="showCocktail()">Reveal Cocktail</button>
+        <div id="recipe-section" style="display:none;">
+            <h2>Recipe:</h2>
+            <p id="cocktail-recipe"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
